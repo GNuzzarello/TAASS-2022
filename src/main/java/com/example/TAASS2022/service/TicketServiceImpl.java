@@ -62,6 +62,7 @@ public class TicketServiceImpl implements TicketService {
         ticketRepository.save(new Ticket(1L, "ProvaS", 99.99, TicketCategories.Sport,  "https://i.postimg.cc/nzL7M8Qj/prova.jpg", "descrizione di prova1", "place_prova1", "16-04-2022"));
         ticketRepository.save(new Ticket(2L, "ProvaCI", 199.99, TicketCategories.Cinema,  "https://i.postimg.cc/nzL7M8Qj/prova.jpg", "descrizione di prova2", "place_prova2", "17-04-2022"));
         ticketRepository.save(new Ticket(3L, "ProvaCO", 299.99, TicketCategories.Concert,  "https://i.postimg.cc/nzL7M8Qj/prova.jpg", "descrizione di prova3", "place_prova3", "18-04-2022"));
+        ticketRepository.save(new Ticket(4L, "ProvaCOMMIT", 299.99, TicketCategories.Concert,  "https://i.postimg.cc/nzL7M8Qj/prova.jpg", "descrizione di prova3", "place_prova3", "18-04-2022"));
     }
 
 }

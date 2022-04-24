@@ -1,0 +1,25 @@
+<div class="form-group">
+    <input type="search" class="form-control" id="search-text" aria-describedby="search-text"
+           [(ngModel)]="searchText" placeholder="Enter event name"
+           autofocus>
+
+    <div ngbDropdown>
+        <div class="column small-12 large-2" [hidden]="!searchText.length">
+            {{ search(searchText) }}
+        <button btn class="btn my-2 my-sm-0" style="color: white" type="submit" id="dropdownConfig" ngbDropdownToggle><fa-icon [icon]="faSearch"></fa-icon></button>
+        <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+            <option *ngFor="let player of filtered" [value]="player[0]" #player (click)="setSelectedItem($event, player[1])">
+                {{player[0]}}
+            </option>
+        </div>
+        </div>
+    </div>
+    <span [hidden]="searchText.length"></span>
+</div>
+
+
+
+
+
+
+

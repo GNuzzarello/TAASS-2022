@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand font-italic" style="color: white"><fa-icon [icon]="faTicketAlt"> </fa-icon>TicketPlanet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation" (click)="toggleCollapsed()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarResponsive" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: white" [routerLink]="'/'">Home</a>
+                </li>
+                <div class="container">
+                <form class="form-inline my-2 my-lg-0">
+                    <app-searchbar></app-searchbar>
+                </form>
+                </div>
+            </ul>
+            <div class="row">
+            <div class="form-inline my-auto">
+                    <div ngbDropdown>
+                        <button class="btn"  style="color: white" id="dropdownBasic1" ngbDropdownToggle><fa-icon [icon]="faShoppingCart"></fa-icon>
+                            </button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <app-shopping-cart (onOrderFinished)=finishOrder($event) #shoppingCartC>
+                            </app-shopping-cart>
+                        </div>
+                    </div>
+                    <div ngbDropdown class="d-inline-block">
+                        <button  class="btn" id="dropdownBasic2" style="color: white" ngbDropdownToggle><fa-icon [icon]="faUser"></fa-icon></button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><app-login></app-login> <span class="sr-only">(current)</span></a>
+                            </li>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+
+

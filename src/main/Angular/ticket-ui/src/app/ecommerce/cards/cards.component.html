@@ -1,0 +1,41 @@
+<div class="container">
+<div class="card-group">
+    <div class="card">
+        <img class="card-img" src="assets/All.png" alt="Card image cap">
+        <div class="card-img-top">
+            <h6 class="card-title">All Tickets</h6>
+            <a href="#" class="stretched-link" (click)="clickedCard(0)"></a>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img" src="assets/Sport.png" alt="Card image cap">
+        <div class="card-img-top">
+            <h6 class="card-title">Sport</h6>
+            <a href="#" class="stretched-link" (click)="clickedCard(1)"></a>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img" src="assets/Cinema.png" alt="Card image cap">
+        <div class="card-img-top">
+            <h6 class="card-title">Cinema</h6>
+            <a href="#" class="stretched-link" (click)="clickedCard(2)"></a>
+
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img" src="assets/Concert.png" alt="Card image cap">
+        <div class="card-img-top">
+            <h6 class="card-title">Concert</h6>
+            <a href="#" class="stretched-link" (click)="clickedCard(3)"></a>
+
+        </div>
+    </div>
+</div>
+    <div class="container" [hidden]="isCardclicked"> <app-rangebar></app-rangebar></div>
+    <br>
+<div class="row" [hidden]="isCardclicked">
+    <div class="col-md-12">
+        <app-tickets #ticketsC [hidden]="orderFinished"></app-tickets>
+    </div>
+</div>
+</div>

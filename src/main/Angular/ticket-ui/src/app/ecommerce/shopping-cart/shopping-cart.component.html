@@ -1,0 +1,20 @@
+<div class="container">
+<div class="card text-blue" style="max-width: 18rem;">
+    <div class="card-header text-center">Shopping Cart</div>
+    <div class="card-body">
+        <h5 class="card-title">Total: ${{this.ecommerceService.Total}}</h5>
+        <hr>
+        <h6 class="card-title">Your Order:</h6>
+
+        <ul>
+            <li *ngFor="let order of this.ecommerceService.TicketOrders.ticketOrders">
+                {{ order.ticket.name }} - {{ order.quantity}} pcs.
+            </li>
+        </ul>
+
+        <button class="btn btn-light btn-block" (click)="finishOrder()"
+               [disabled]="this.ecommerceService.TicketOrders.ticketOrders.length == 0">Checkout
+        </button>
+    </div>
+</div>
+</div>

@@ -1,0 +1,17 @@
+<ngb-carousel *ngIf="!slidescio" #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+    <ng-template ngbSlide *ngFor="let img of ssimg; let i = index">
+        <div class="carousel-caption">
+            <h3>Upcoming {{cat[i]}} Event</h3>
+        </div>
+        <a [routerLink]="'/' + img[1]" target="_blank" rel="nofollow noopener noreferrer">
+            <div class="picsum-img-wrapper">
+                <img [src]="img[0]" alt="My image {{i + 1}} description">
+            </div>
+        </a>
+    </ng-template>
+</ngb-carousel>
+<hr>
+
+
+
+

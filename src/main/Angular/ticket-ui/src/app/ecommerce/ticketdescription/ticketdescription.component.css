@@ -1,0 +1,91 @@
+
+body{
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+::ng-deep .ngxImageZoomContainer > img{
+    max-height: 500px;
+}
+.ticket-item{
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.ticket-item:hover{
+    transform: scale(1.1);
+}
+
+.breadcrumb{
+    background-color: #eee;
+}
+.ticket-small img{
+    max-width: 10rem;
+    padding: 1rem;
+}
+
+.cart-item{
+    border: 1px solid grey;
+}
+.order{
+    border: 1px solid grey;
+}
+.close i{
+    font-size: 1.5rem;
+}
+.close i:hover{
+    color: red;
+}
+
+.toast{
+    top:-50px;
+}
+.toast.show{
+    top:0px ;
+}
+
+.color-label{
+    border-radius: 50% !important;
+    margin: 5px;
+}
+.color-label i{
+    opacity: 0;
+}
+.btn-check:checked+.color-label i{
+    opacity: 1;
+}
+.text-small{
+    font-size: 0.8rem;
+}
+.accordion-body{
+    font-size: 0.8rem;
+    color:grey;
+}
+.accordion-button{
+    padding: 5px;
+    background-color: #ccc;
+}
+.accordion-button:not(.collapsed){
+    background-color: #2c2c2c;
+    color: white;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+}
+
+.cart-badge{
+    position: relative;
+    top:-15px;
+    left:-10px;
+}
+
+.btn {
+    background-color: #cc3245;
+}
+.btn[data-name="ciao"]{
+    background-color: #2c2c2c;
+}
+
+
+

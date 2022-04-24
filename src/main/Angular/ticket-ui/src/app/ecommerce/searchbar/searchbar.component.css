@@ -1,0 +1,13 @@
+.dropdown {
+    max-height: 5000px;
+    width: 80px;
+    overflow: paged-x-controls;
+}
+
+.btn {
+    background-color: #feca27;
+}
+.form-control {
+    width: 200px;
+}
+

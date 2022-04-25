@@ -65,7 +65,7 @@ public class TicketServiceImpl implements TicketService {
         ticketRepository.save(new Ticket(4L, "Juventus-Lazio", 59.99, TicketCategories.Sport,  "https://i.postimg.cc/TYtg0QrN/Schermata-2022-04-25-alle-16-44-46.png", "La Juventus affronterà la Lazio nella 37 giornata del campionato italiano di calcio.", "Torino", "16-05-2022"));
         ticketRepository.save(new Ticket(5L, "Milan-Atalanta", 199.99, TicketCategories.Sport,  "https://i.postimg.cc/VsBVfQ8S/Schermata-2022-04-25-alle-16-48-08.png", "Il Milan affronterà l'Atalanta nella 37 giornata del campionato italiano di calcio. Incontro decisivo per la vittoria dello scudetto.", "Milano", "15-05-2022"));
         ticketRepository.save(new Ticket(6L, "Sonic 2 - Il FIlm", 9.99, TicketCategories.Cinema,  "https://i.postimg.cc/VsWm3VZg/Schermata-2022-04-25-alle-16-52-04.png", "Cast: James Marsden, Ben Schwartz, Tika Sumpter, Natasha Rothwell, Adam Pally, Jim Carrey", "The Space Cinema - Torino", "29-05-2022"));
-        ticketRepository.save(new Ticket(1L, "The Lost City", 89.99, TicketCategories.Cinema,  "https://i.postimg.cc/V63D5BF4/Schermata-2022-04-25-alle-16-55-18.png", "Cast: Sandra Bullock, Channing Tatum, Daniel Radcliffe, Da'Vine Joy Randolph", "Cinema Eliseo - Torino", "30-09-2022"));
+        ticketRepository.save(new Ticket(7L, "The Lost City", 89.99, TicketCategories.Cinema,  "https://i.postimg.cc/V63D5BF4/Schermata-2022-04-25-alle-16-55-18.png", "Cast: Sandra Bullock, Channing Tatum, Daniel Radcliffe, Da'Vine Joy Randolph", "Cinema Eliseo - Torino", "30-09-2022"));
     }
 
 }
